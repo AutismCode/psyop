@@ -1,0 +1,30 @@
+.matrix-rain {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #0f0;
+  }
+  
+  .matrix-column {
+    display: inline-block;
+    white-space: nowrap;
+    margin-right: 1.5rem;
+    animation: matrix-rain 2s linear infinite;
+  }
+  
+  @keyframes matrix-rain {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(100%);
+    }
+  }
+  
